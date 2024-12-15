@@ -48,8 +48,7 @@
 <body>
     <h1>Undefeatable<br> Tic-Tac-Toe</h1>
     <div id="board"></div>
-    <div id="message">Player [X]
-        <br>Computer [O]</div>
+    <div id="message">Player [X]<br>Skynet [O]</div>
     <button id="replay" onclick="replayGame()">Replay</button>
 
     <script>
@@ -80,7 +79,7 @@
                 board[row][col] = currentPlayer;
                 updateBoard();
                 if (checkWinner()) {
-                    document.getElementById('message').textContent = `${currentPlayer} wins!`;
+                    document.getElementById('message').textContent = "Skynet wins!";
                     currentPlayer = null;
                 } else if (isBoardFull()) {
                     document.getElementById('message').textContent = "It's a tie!";
@@ -126,7 +125,7 @@
             board[row][col] = 'O';
             updateBoard();
             if (checkWinner()) {
-                document.getElementById('message').textContent = `${currentPlayer} wins!`;
+                document.getElementById('message').textContent = "Skynet wins!";
                 currentPlayer = null;
             } else if (isBoardFull()) {
                 document.getElementById('message').textContent = "It's a tie!";
@@ -198,7 +197,7 @@
                 }
             }
             updateBoard();
-            document.getElementById('message').innerHTML = "Player [X]<br>Computer [O]";
+            document.getElementById('message').innerHTML = "Player [X]<br>Skynet [O]";
 
             if (startingPlayer === 'O') {
                 aiMove();
