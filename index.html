@@ -13,12 +13,17 @@
             margin: 20px;
         }
         h1 {
-            margin-bottom: 5px;
+            margin: 0; 
+            font-size: 36px;
+            line-height: 1; 
+            font-weight: bold;
         }
         h2 {
-            font-size: 14px; 
+            margin: 1;
+            font-size: 14px;
             color: gray;
-            margin-top: 0; 
+            line-height: 1; 
+            font-weight: normal;
         }
         #board {
             display: grid;
@@ -55,8 +60,9 @@
     </style>
 </head>
 <body>
-    <h1>Undefeatable<br> Tic-Tac-Toe</h1>
-    <h2> you may tie, but you can never defeat skynet</h2>
+    <h1>Undefeatable</h1>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>you may tie but you can't ever defeat Skynet</h2>
     <div id="board"></div>
     <div id="message">Player [X]<br>Skynet [O]</div>
     <button id="replay" onclick="replayGame()">Replay</button>
